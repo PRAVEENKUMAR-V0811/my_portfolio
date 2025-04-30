@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FaTimes, FaGithub } from 'react-icons/fa';
 import './portfolio.css';
 import elearn1 from '../../assets/homepage-elearn.png';
+import savaNote from '../../assets/savanote.png';
 
 const projects = [
   {
@@ -21,6 +22,15 @@ const projects = [
     description: 'Under Working on a real-time chat application using React.js, Express.js, Socket.io, and MongoDB. The application allows users to send and receive messages in real-time, share images and manage user profiles.',
     techStack: 'React.js, Express.js, Socket.io, MongoDB',
     github: 'https://github.com/yourusername/task-tracker'
+  },
+  {
+    id: 3,
+    title: 'SavaNote - Note Taking Chrome Extension',
+    category: 'Extension',
+    image: savaNote,
+    description: 'SavaNote is a user-friendly Chrome extension designed to help you quickly capture, edit, and manage your notes directly in your browser. Whether you\'re brainstorming ideas, saving important reminders, or organizing key information, SavaNote offers a seamless and efficient solution for note-taking right at your fingertips.',
+    techStack: 'HTML, CSS, JavaScript, Chrome Extension API , Quill.js',
+    github: 'https://github.com/PRAVEENKUMAR-V0811/SavaNote-Chrome-Extension'
   }
 ];
 
@@ -42,7 +52,7 @@ const Portfolio = () => {
     <div className="portfolio-container" id='portfolio'>
       <h2>My Portfolio</h2>
       <div className="portfolio-filters">
-        {['All', 'Web', 'App'].map(cat => (
+        {['All', 'Web', 'App' , 'Extension'].map(cat => (
           <button
             key={cat}
             className={filter === cat ? 'active' : ''}
