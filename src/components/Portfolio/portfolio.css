@@ -55,9 +55,16 @@
   .portfolio-card:hover {
     transform: translateY(-5px);
   }
-  
+
+
   .portfolio-image-container {
-    position: relative;
+  width: 100%;
+  max-width: 300px;  /* Controls the largest size */
+  aspect-ratio: 3 / 2;  /* Maintains 3:2 aspect ratio */
+  overflow: hidden;
+  border-radius: 5px;  /* Optional rounded corners */
+  margin: auto;  /* Centers the images */
+  position: relative;
   }
   
   .portfolio-image {
@@ -181,3 +188,23 @@
     transform: scale(1.2);
   }
   
+
+/* Responsive scaling for smaller devices */
+@media (max-width: 768px) {
+  .portfolio-image-container {
+    max-width: 90%;  /* Resizes to 90% of container on smaller screens */
+  }
+}
+
+/* For mobile view */
+@media (max-width: 768px) {
+  .portfolio-filters {
+    gap: 30px; /* Increased space between buttons on mobile */
+    flex-direction: column; /* Stacks the buttons vertically on mobile */
+  }
+  
+  .portfolio-filters button {
+    width: 30%; /* Makes buttons full width on mobile */
+    margin-bottom: 10px; /* Adds space between vertically stacked buttons */
+  }
+}
