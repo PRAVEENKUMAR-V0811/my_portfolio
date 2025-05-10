@@ -3,6 +3,7 @@ import { FaTimes, FaGithub } from 'react-icons/fa';
 import './portfolio.css';
 import elearn1 from '../../assets/homepage-elearn.png';
 import savaNote from '../../assets/savanote.png';
+import tickpress from '../../assets/tickpress.png';
 
 const projects = [
   {
@@ -31,6 +32,15 @@ const projects = [
     description: 'SavaNote is a user-friendly Chrome extension designed to help you quickly capture, edit, and manage your notes directly in your browser. Whether you\'re brainstorming ideas, saving important reminders, or organizing key information, SavaNote offers a seamless and efficient solution for note-taking right at your fingertips.',
     techStack: 'HTML, CSS, JavaScript, Chrome Extension API , Quill.js',
     github: 'https://github.com/PRAVEENKUMAR-V0811/SavaNote-Chrome-Extension'
+  },
+  {
+    id: 4,
+    title: 'TickPress - Time Tracker for Focused Work',
+    category: 'Extension',
+    image: tickpress,
+    description: 'TickPress is a lightweight and efficient Chrome extension designed to help users track the time they spend on solving questions, studying, or performing deep, focused tasks.Whether you\'re a student, coder, or competitive exam aspirant, TickPress helps you manage your time effectively.',
+    techStack: 'HTML, CSS, JavaScript, Chrome Extension API',
+    github: 'https://github.com/PRAVEENKUMAR-V0811/TickPress_Timer_Extension.git'
   }
 ];
 
