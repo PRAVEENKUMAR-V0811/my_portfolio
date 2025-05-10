@@ -77,8 +77,7 @@ const Portfolio = () => {
         {filteredProjects.map(project => (
           <div key={project.id} className="portfolio-card">
             <div className="portfolio-image-container">
-              {/* <img src={project.image} alt={project.title} className="portfolio-image" /> */}
-              <img src={project.image} alt='Under Building' className="portfolio-image" />
+              <img src={project.image} alt={project.title} className="portfolio-image" />
             </div>
             <h3 className="portfolio-project-title">{project.title}</h3>
             <button
