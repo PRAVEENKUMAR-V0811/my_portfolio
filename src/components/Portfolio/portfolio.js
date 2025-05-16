@@ -4,6 +4,7 @@ import './portfolio.css';
 import elearn1 from '../../assets/homepage-elearn.png';
 import savaNote from '../../assets/savanote.png';
 import tickpress from '../../assets/tickpress.png';
+import datanest from '../../assets/DataNest.png';
 
 const projects = [
   {
@@ -17,6 +18,15 @@ const projects = [
   },
   {
     id: 2,
+    title: 'DataNest - Online CSV Editor',
+    category: 'Web',
+    image: datanest,
+    description: 'DataNest is a fast, user-friendly online CSV editor that enables uploading, editing, and exporting CSV files directly in the browser. It features drag-and-drop support, real-time table editing, and a responsive design—no sign-up needed. Ideal for quick CSV modifications on any device.',
+    techStack: 'Vite + React, Tailwind CSS, EmailJs',
+    github: 'https://github.com/PRAVEENKUMAR-V0811/DataNest-Online-CSV-Editor.git'
+  },
+  {
+    id: 3,
     title: 'Real Time Chat Application',
     category: 'App',
     image: '',
@@ -25,7 +35,7 @@ const projects = [
     github: 'https://github.com/yourusername/task-tracker'
   },
   {
-    id: 3,
+    id: 4,
     title: 'SavaNote - Note Taking Chrome Extension',
     category: 'Extension',
     image: savaNote,
@@ -34,7 +44,7 @@ const projects = [
     github: 'https://github.com/PRAVEENKUMAR-V0811/SavaNote-Chrome-Extension'
   },
   {
-    id: 4,
+    id: 5,
     title: 'TickPress - Time Tracker for Focused Work',
     category: 'Extension',
     image: tickpress,
