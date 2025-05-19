@@ -5,6 +5,7 @@ import elearn1 from '../../assets/homepage-elearn.png';
 import savaNote from '../../assets/savanote.png';
 import tickpress from '../../assets/tickpress.png';
 import datanest from '../../assets/DataNest.png';
+import pizzareport from '../../assets/PizzaReport.png';
 
 const projects = [
   {
@@ -51,6 +52,15 @@ const projects = [
     description: 'TickPress is a lightweight and efficient Chrome extension designed to help users track the time they spend on solving questions, studying, or performing deep, focused tasks.Whether you\'re a student, coder, or competitive exam aspirant, TickPress helps you manage your time effectively.',
     techStack: 'HTML, CSS, JavaScript, Chrome Extension API',
     github: 'https://github.com/PRAVEENKUMAR-V0811/TickPress_Timer_Extension.git'
+  },
+  {
+    id: 6,
+    title: 'Slice & Insight: A Pizza Sales Dashboard',
+    category: 'Data Analytics',
+    image: pizzareport,
+    description: 'This Power BI project provides a comprehensive visualization of pizza sales data sourced from an MS SQL Server database. It analyzes core business metrics such as total revenue, order patterns, product category performance, and sales trends. The report helps identify best-selling pizzas, least-performing items, and customer behavior insights, assisting in data-driven decision-making for better business strategies.',
+    techStack: 'Power BI, MS SQL Server',
+    github: 'https://github.com/PRAVEENKUMAR-V0811/Pizza-Sales-Report-PowerBI.git'
   }
 ];
 
@@ -72,7 +82,7 @@ const Portfolio = () => {
     <div className="portfolio-container" id='portfolio'>
       <h2>My Portfolio</h2>
       <div className="portfolio-filters">
-        {['All', 'Web', 'App' , 'Extension'].map(cat => (
+        {['All', 'Web', 'App' , 'Extension','Data Analytics'].map(cat => (
           <button
             key={cat}
             className={filter === cat ? 'active' : ''}
