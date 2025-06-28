@@ -6,16 +6,17 @@ import savaNote from '../../assets/savanote.png';
 import tickpress from '../../assets/tickpress.png';
 import datanest from '../../assets/DataNest.png';
 import pizzareport from '../../assets/PizzaReport.png';
+import RespAI from '../../assets/RespAI.png'
 
 const projects = [
   {
     id: 1,
-    title: 'Online E-Learning Platform',
-    category: 'Web',
-    image: elearn1,
-    description: 'Developed a full-stack E-Learning platform using React.js, Node.js, and MySQL with features like user authentication, course enrollment, video streaming, quizzes, payments, and certificate generation.',
-    techStack: 'React.js, Node.js, MySQL, JWT, Axios',
-    github: 'https://github.com/PRAVEENKUMAR-V0811/Student_E-Learning_Portal'
+    title: 'RespAI - Smart Chat Companion',
+    category: 'AI/ML',
+    image: RespAI,
+    description: 'RespAI is an intelligent, context-aware chatbot designed to maintain coherent multi-turn conversations. Built using LangChain and Streamlit, it integrates the DeepSeek language model via OpenRouter to deliver structured and accurate responses. The application supports real-time user interaction with dynamic chat UI, session-based memory, time-based greetings, and clean modular architecture.',
+    techStack: 'Python, Streamlit, LangChain, OpenRouter (DeepSeek LLM)',
+    github: 'https://github.com/PRAVEENKUMAR-V0811/RespAI_Chatbot.git'
   },
   {
     id: 2,
@@ -28,15 +29,6 @@ const projects = [
   },
   {
     id: 3,
-    title: 'Real Time Chat Application',
-    category: 'App',
-    image: '',
-    description: 'Under Working on a real-time chat application using React.js, Express.js, Socket.io, and MongoDB. The application allows users to send and receive messages in real-time, share images and manage user profiles.',
-    techStack: 'React.js, Express.js, Socket.io, MongoDB',
-    github: 'https://github.com/yourusername/task-tracker'
-  },
-  {
-    id: 4,
     title: 'SavaNote - Note Taking Chrome Extension',
     category: 'Extension',
     image: savaNote,
@@ -45,7 +37,7 @@ const projects = [
     github: 'https://github.com/PRAVEENKUMAR-V0811/SavaNote-Chrome-Extension'
   },
   {
-    id: 5,
+    id: 4,
     title: 'TickPress - Time Tracker for Focused Work',
     category: 'Extension',
     image: tickpress,
@@ -54,13 +46,22 @@ const projects = [
     github: 'https://github.com/PRAVEENKUMAR-V0811/TickPress_Timer_Extension.git'
   },
   {
-    id: 6,
+    id: 5,
     title: 'Slice & Insight: A Pizza Sales Dashboard',
     category: 'Data Analytics',
     image: pizzareport,
     description: 'This Power BI project provides a comprehensive visualization of pizza sales data sourced from an MS SQL Server database. It analyzes core business metrics such as total revenue, order patterns, product category performance, and sales trends. The report helps identify best-selling pizzas, least-performing items, and customer behavior insights, assisting in data-driven decision-making for better business strategies.',
     techStack: 'Power BI, MS SQL Server',
     github: 'https://github.com/PRAVEENKUMAR-V0811/Pizza-Sales-Report-PowerBI.git'
+  },
+  {
+    id: 6,
+    title: 'Online E-Learning Platform',
+    category: 'Web',
+    image: elearn1,
+    description: 'Developed a full-stack E-Learning platform using React.js, Node.js, and MySQL with features like user authentication, course enrollment, video streaming, quizzes, payments, and certificate generation.',
+    techStack: 'React.js, Node.js, MySQL, JWT, Axios',
+    github: 'https://github.com/PRAVEENKUMAR-V0811/Student_E-Learning_Portal'
   }
 ];
 
@@ -82,7 +83,7 @@ const Portfolio = () => {
     <div className="portfolio-container" id='portfolio'>
       <h2>My Portfolio</h2>
       <div className="portfolio-filters">
-        {['All', 'Web', 'App' , 'Extension','Data Analytics'].map(cat => (
+        {['All', 'AI/ML','Web', 'Extension','Data Analytics'].map(cat => (
           <button
             key={cat}
             className={filter === cat ? 'active' : ''}
