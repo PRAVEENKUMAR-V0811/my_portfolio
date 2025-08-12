@@ -6,8 +6,31 @@
     overflow: hidden;
     position: relative;
 }
+.introContent {
+    height: 100vh;
+    width: 60%; /* instead of 100vw */
+    padding: 2rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: center;
+    color: white;
+    z-index: 1; /* ensures text stays on top */
+}
 
-.bg{
+.bg {
+    position: absolute;
+    top: -4rem;
+    right: 0;
+    z-index: 0; /* stays behind the text */
+    object-fit: cover;
+    height: 100vh;
+    width: 40%; /* ensure it doesn't fill the text area */
+}
+
+/* .bg{
     position: absolute;
     top:-4rem;
     right: 0;
@@ -25,8 +48,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: white;
-}
+    color: white; */
+/* } */
 
 .hello{
     font-size: 1.75rem;
@@ -70,10 +93,11 @@
 
 @media  screen and (max-width:840px) {
     .bg{
-        right : -10vw
+        right : 0vw
     }
     .introContent{
-        font-size: 10vw;
+        font-size: 5vw;
+        text-align: left;
     }
     .hello{
         font-size: 4.5vw;
@@ -82,6 +106,13 @@
 
 @media  screen and (max-width:414px) {
     .bg{
-        right : -20vw
+        right : 0vw;
+        height: 97vh;
+        width: 97vw;
+        object-fit: cover;
+        opacity: 0.35;
+    }
+    .introContent{
+        font-size: 5vw;
     }
 }

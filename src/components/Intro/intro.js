@@ -2,14 +2,16 @@ import React from 'react'
 import './intro.css';
 import { Link } from 'react-scroll';
 import hire from '../../assets/hireme.png';
-import bgimg from '../../assets/bgimg.png';
+import bgimg from '../../assets/Myphoto.JPG';
 const Intro = () => {
   return (
     <section id="intro">
         <div className='introContent'>
             <span className='hello'>Hello,</span>
-            <span className='introText'>I'm <span className='introName'>Praveen Kumar</span><br/>Software Engineer</span>
-            <p className='introPara'>I am a software engineer with a passion for building innovative solutions. <br/>I have experience in various programming languages and frameworks, <br/>and I am always eager to learn new technologies.</p>
+            <span className='introText'>I'm <span className='introName'>Praveen Kumar</span><br/>Software Engineer | AI & ML</span>
+            <p className='introPara'>I create intelligent solutions by blending Artificial Intelligence, Machine Learning, and solid software engineering skills. 
+            <br/>Through hands-on projects and continuous learning, I’ve built predictive models, AI-driven applications, and scalable systems that turn data into impactful products. 
+            <br/>Fueled by curiosity and precision, I bring ideas to life that push the boundaries of technology.</p>
             <Link><button className='btn'
             onClick={() =>{
               document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
